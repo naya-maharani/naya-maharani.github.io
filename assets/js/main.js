@@ -169,7 +169,7 @@
                 layoutMode: 'fitRows'
             });
             let portfolioFilters = select('#portfolio-filters li', true);
-            on('click', '#portfolio-filters li', function(e){
+            on('click', '#portfolio-flters li', function(e){
                 e.preventDefault();
                 portfolioFilters.forEach(function(el) {
                     el.classList.remove('filter-active');
@@ -203,7 +203,7 @@
 
 
     function aos_init() {
-        AOS_init({
+        AOS.init({
             duration: 1000,
             easing: "ease-in-out",
             once: true,
